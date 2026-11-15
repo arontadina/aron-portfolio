@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Works — Aron Jay Tadina</title>
+<meta name="description" content="Freelance graphic designer: jerseys, logos, posters, social media, UI and web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side">
+  <a class="brand" href="index.html">Aron Jay Tadina</a>
+  <nav><div class="nav-group"><a href="work.html#graphic-design" aria-current="page">Works</a><div class="sub-nav"><a href="work.html#graphic-design">Graphic Design</a><a href="work.html#web-mobile">Mobile &amp; Web Development</a><a href="work.html#data-viz">Data Visualization</a><a href="work.html#data-entry">Data Entry</a></div></div><a href="services.html">Services</a></nav>
+  <div class="side-foot">
+    <div class="theme" role="group" aria-label="Theme">
+      <button data-theme="system" aria-label="System theme">◐</button>
+      <button data-theme="light" aria-label="Light theme">☀</button>
+      <button data-theme="dark" aria-label="Dark theme">☾</button>
+    </div>
+    <p>For projects and quotes, email</p>
+    <a class="mail" href="mailto:tadina.aronjay@gmail.com">tadina.aronjay@gmail.com</a>
+  </div>
+</aside>
+<main id="top">
+  <div class="work-tabs" role="navigation" aria-label="Works categories"><a href="#graphic-design">Graphic Design</a><a href="#web-mobile">Mobile &amp; Web Development</a><a href="#data-viz">Data Visualization</a><a href="#data-entry">Data Entry</a></div>
+  <section class="panel" id="graphic-design">
+    <p class="crumb">Works</p><h2>Graphic Design</h2>
+    <p class="lead">Jerseys, logos, posters, social media graphics and tarpaulins.</p>
+    <div class="filters" id="filters" role="group" aria-label="Filter work"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+  <section class="panel" id="web-mobile" hidden>
+    <p class="crumb">Works</p><h2>Mobile &amp; Web Development</h2>
+    <p class="lead">Websites and mobile-first apps I have built and deployed.</p>
+    <article class="proj">
+      <div class="proj-head">
+        <div><h3>BalikBarangay</h3><p class="sub">Post-Calamity Recovery &amp; Rehabilitation Tracking System</p></div>
+        <a class="btn" href="https://balikbarangay-xi.vercel.app/" target="_blank" rel="noopener">Live view ↗</a>
+      </div>
+      <p class="tagline">A Community-Based Post-Disaster Recovery Monitoring Platform</p>
+      <p class="tags"><span>Mobile-first web app</span><span>Web development</span><span>Deployed on Vercel</span></p>
+      <p>BalikBarangay is a community-based post-disaster recovery monitoring platform. It works as a tracking system for the recovery and rehabilitation of a barangay after a calamity, and it is built mobile-first so it can be used on the phones people already carry. I built it end to end, and it is live now.</p>
+    </article>
+    <p class="crumb shots-label">App screens</p>
+    <div class="cov-stage" tabindex="0" aria-roledescription="carousel" aria-label="BalikBarangay app screens">
+      <article class="cov" data-i="0">
+        <div class="pills"><span class="pill on">Landing screen</span><span class="pill">Sign in</span></div>
+        <div class="cov-phone"><div class="phone"><div class="screen"><img src="assets/bb-welcome.jpg" alt="BalikBarangay welcome screen" loading="lazy"></div></div></div>
+        <h3>Welcome screen</h3><p>Residents report damage after a calamity, get a tracking number and follow what happens next. A clear note says it is not an emergency service.</p>
+      </article>
+      <article class="cov" data-i="1">
+        <div class="pills"><span class="pill on">Report tracking</span><span class="pill">Photos &amp; evidence</span></div>
+        <div class="cov-phone"><div class="phone"><div class="screen"><img src="assets/bb-report.jpg" alt="BalikBarangay report tracking screen" loading="lazy"></div></div></div>
+        <h3>Track a report</h3><p>Each report gets a tracking number and a status, with the purok, incident date, landmark, photo evidence and a timeline of updates.</p>
+      </article>
+      <article class="cov" data-i="2">
+        <div class="pills"><span class="pill on">Community view</span><span class="pill">Privacy-first</span></div>
+        <div class="cov-phone"><div class="phone"><div class="screen"><img src="assets/bb-progress.jpg" alt="BalikBarangay community progress screen" loading="lazy"></div></div></div>
+        <h3>Community recovery progress</h3><p>Reports received, cases closed and breakdowns by status, concern and purok. Small groups are hidden and no names or addresses show.</p>
+      </article>
+      </div>
+    <div class="cov-ctl"><button class="cov-nav" data-d="-1" aria-label="Previous screen">‹</button><span class="dots"><button class="dot" aria-label="Welcome screen"></button><button class="dot" aria-label="Report tracking"></button><button class="dot" aria-label="Community progress"></button></span><button class="cov-nav" data-d="1" aria-label="Next screen">›</button></div>
+  </section>
+  <section class="panel" id="data-viz" hidden>
+    <p class="crumb">Works</p><h2>Data Visualization</h2>
+    <div class="empty"><span aria-hidden="true">✦</span><h3>Coming soon</h3><p>Samples for Data Visualization will be added here.</p><a class="btn" href="services.html">See the service →</a></div>
+  </section>
+  <section class="panel" id="data-entry" hidden>
+    <p class="crumb">Works</p><h2>Data Entry</h2>
+    <div class="empty"><span aria-hidden="true">✦</span><h3>Coming soon</h3><p>Samples for Data Entry will be added here.</p><a class="btn" href="services.html">See the service →</a></div>
+  </section>
+  <footer>© <span id="yr"></span> Aron Jay Tadina</footer>
+</main>
+<div class="lb" id="lb" hidden><button class="lb-x" aria-label="Close">×</button><button class="lb-p" aria-label="Previous">‹</button><img alt=""><button class="lb-n" aria-label="Next">›</button><p></p></div>
+<script src="works.js"></script>
+<div class="dock-bg" aria-hidden="true"></div>
+<aside class="dock" aria-label="Contact">
+  <div class="dock-in">
+    <div class="dock-top"><span class="live"><i></i>Open for projects</span></div>
+    <h3>Let&rsquo;s make something <span class="hl-grad">worth creating.</span></h3>
+    <p class="dock-sub">Graphic design, web &amp; mobile apps and data work, all from one person.</p>
+    <div class="dock-btns">
+      <a class="dbtn primary" href="https://drive.google.com/uc?export=download&amp;id=1evlLLrJTSdC5X0lsocukMzuxKKpBHAiK" target="_blank" rel="noopener">Download CV <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg></a>
+      <a class="dbtn" href="mailto:tadina.aronjay@gmail.com">Email me <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+    </div>
+    <p class="dloc">Philippines · <span id="dockClock">--:--</span></p>
+  </div>
+</aside>
+<script src="script.js"></script>
+</body>
+</html>
