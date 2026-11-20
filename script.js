@@ -140,3 +140,15 @@
     bg.appendChild(s);
   }
 })();
+
+// Motion switch (remembered). Animations are on unless the visitor turns them off here.
+(function(){
+  var root=document.documentElement,b=document.getElementById('motionBtn');
+  function apply(on){
+    root.classList.toggle('no-motion',!on);
+    if(b){b.setAttribute('aria-pressed',on?'true':'false');b.querySelector('span').textContent='Motion: '+(on?'on':'off')}
+  }
+  var on=true;try{on=localStorage.getItem('motion')!=='off'}catch(e){}
+  apply(on);
+  if(b)b.addEventListener('click',function(){on=!on;try{localStorage.setItem('motion',on?'on':'off')}catch(e){}apply(on)});
+})();

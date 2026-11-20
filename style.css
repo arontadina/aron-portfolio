@@ -55,7 +55,7 @@ footer{text-align:center;color:var(--mute);font:11px var(--mono);padding:16px 0 
  .hero{grid-template-columns:1fr;min-height:0;gap:32px}.portrait{max-width:280px}
  .grid{grid-template-columns:repeat(2,1fr)}.hero{padding-top:24px}input,textarea{font-size:16px}
 }
-@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
 .filters{display:flex;flex-wrap:wrap;gap:8px;margin:-8px 0 24px}
 .filters button{all:unset;cursor:pointer;font:13px var(--mono);color:var(--mute);border:1px solid var(--line);border-radius:99px;padding:5px 14px}
 .filters button[aria-pressed=true]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
@@ -80,7 +80,7 @@ footer{text-align:center;color:var(--mute);font:11px var(--mono);padding:16px 0 
 .lb.zoomed img{cursor:zoom-out}
 .lb:not([hidden]) img{animation:pop .18s ease-out}
 @keyframes pop{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
-@media(prefers-reduced-motion:reduce){.lb:not([hidden]) img{animation:none}}
+
 
 /* orange is reserved for highlights; everything else is white */
 h1,.brand,h2,.grp h3,.stats strong{color:var(--acc)}
@@ -132,7 +132,7 @@ h1,.brand,h2,.grp h3,.stats strong{color:var(--acc)}
 .svc-card:hover .chips span{border-color:var(--mute)}
 .chips span:hover{background:var(--acc);color:var(--bg);border-color:var(--acc)}
 @media(max-width:700px){.svc-grid{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:reduce){.ticker-in{animation:none}.svc-card{transition:none}}
+
 .cov-stage{position:relative;height:468px;overflow:hidden;outline:none}
 .cov{position:absolute;left:50%;top:6px;width:min(400px,80%);padding:16px;border:1px solid var(--line);border-radius:18px;background:var(--bg);box-shadow:0 18px 50px rgba(0,0,0,.28);transform:translateX(calc(-50% + var(--x,0%))) rotate(var(--r,0deg)) scale(var(--s,1));opacity:var(--o,1);z-index:var(--z,1);transition:transform .45s cubic-bezier(.2,.8,.2,1),opacity .45s}
 .cov[data-pos="0"]{--x:0%;--r:0deg;--s:1;--o:1;--z:3}
@@ -152,7 +152,7 @@ h1,.brand,h2,.grp h3,.stats strong{color:var(--acc)}
 .dots{display:flex;gap:8px}.dot{all:unset;cursor:pointer;width:8px;height:8px;border-radius:50%;background:var(--line);transition:width .2s,background .2s}
 .dot[aria-current=true]{width:22px;border-radius:99px;background:var(--acc)}
 .cov-nav:focus-visible,.dot:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
-@media(prefers-reduced-motion:reduce){.cov{transition:none}}
+
 .sec-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}
 .sec-head h2{margin:0}
 
@@ -188,7 +188,7 @@ h1,.brand,h2,.grp h3,.stats strong{color:var(--acc)}
 .badge{display:inline-flex;align-items:center;gap:6px;font:700 10px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--bg);background:var(--acc);border-radius:99px;padding:2px 10px}
 .badge i{width:6px;height:6px;border-radius:50%;background:var(--bg)}
 @media(max-width:700px){.xp-card{grid-template-columns:1fr;gap:8px}.xp-when b{font-size:34px}}
-@media(prefers-reduced-motion:reduce){.xp.current .node::after{animation:none}.xp-card{transition:none}}
+
 
 /* ---- stats with icons ---- */
 .stats{grid-template-columns:repeat(4,1fr)}
@@ -227,7 +227,7 @@ h1{font:500 clamp(28px,3.1vw,40px)/1.05 var(--mono);margin:0 0 10px}
 .spark{position:absolute;z-index:2;color:var(--acc);line-height:1;animation:floaty 4.5s ease-in-out infinite}
 .spark.s1{top:4%;right:-9%;font-size:26px}.spark.s2{top:46%;left:-11%;font-size:16px;animation-delay:-2s}
 @keyframes floaty{50%{transform:translateY(-7px) rotate(14deg)}}
-@media(prefers-reduced-motion:reduce){.spark{animation:none}.portrait .face{transition:none}}
+
 @media(max-width:860px){.portrait.pic{max-width:200px;margin:0 auto 6px}}
 
 /* ---- services page ---- */
@@ -259,7 +259,7 @@ h1{font:500 clamp(28px,3.1vw,40px)/1.05 var(--mono);margin:0 0 10px}
 #cta{padding-top:12px}
 @media(max-width:860px){.svc-block{grid-template-columns:1fr;gap:16px}.steps{grid-template-columns:1fr 1fr}.steps li:not(:last-child)::after{display:none}}
 @media(max-width:560px){.subs{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:reduce){.sub,.sub .go{transition:none}}
+
 
 /* ---- Works: sidebar sub-navigation + category panels ---- */
 .nav-group{display:flex;flex-direction:column;gap:7px}
@@ -313,7 +313,7 @@ h1{font:500 clamp(28px,3.1vw,40px)/1.05 var(--mono);margin:0 0 10px}
   .flow li{display:grid;grid-template-columns:64px 1fr;gap:14px;text-align:left;align-items:start}
   .orb{margin:0}
 }
-@media(prefers-reduced-motion:reduce){.flow::after{display:none}.orb{animation:none}.fl-body{transition:none}}
+
 
 /* ---- certifications: ticket-style cards ---- */
 .cert-count{font:700 10px var(--mono);text-transform:uppercase;letter-spacing:.14em;color:var(--bg);background:var(--acc);border-radius:99px;padding:3px 12px}
@@ -332,7 +332,7 @@ h1{font:500 clamp(28px,3.1vw,40px)/1.05 var(--mono);margin:0 0 10px}
 .cert-go{font:600 12px var(--mono);color:var(--acc)}
 .cert:hover .cert-go{text-decoration:underline}
 @media(max-width:760px){.certs-grid{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:reduce){.cert,.cert-stub svg{transition:none}}
+
 
 /* ---- services cards: brief description ---- */
 .svc-card h3{margin-bottom:6px}
@@ -353,7 +353,7 @@ h1{font:500 clamp(28px,3.1vw,40px)/1.05 var(--mono);margin:0 0 10px}
 .tool:hover{transform:translateY(-3px);border-color:var(--acc);background:color-mix(in srgb,var(--acc) 12%,var(--bg))}
 .tool:hover .mono{background:var(--acc);color:var(--bg);border-color:var(--acc)}
 @media(max-width:700px){.tk-grid{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:reduce){.tool,.tool .mono{transition:none}}
+
 
 /* ---- fixed contact dock (right side) ---- */
 @property --ang{syntax:"<angle>";inherits:false;initial-value:0deg}
@@ -388,7 +388,7 @@ h1{font:500 clamp(28px,3.1vw,40px)/1.05 var(--mono);margin:0 0 10px}
   .dock-top{flex:none}.dock-btns{display:flex;flex:1;gap:8px}.dock-btns .dbtn{flex:1;padding:9px 10px;font-size:12px}
 }
 @media(max-width:600px){.dock-top{display:none}}
-@media(prefers-reduced-motion:reduce){.dock{animation:none}.dbtn.primary::after,.live i::after{animation:none}.dbtn,.dsoc a{transition:none}}
+
 
 .dloc{white-space:nowrap}
 
@@ -402,7 +402,7 @@ h1{font:500 clamp(28px,3.1vw,40px)/1.05 var(--mono);margin:0 0 10px}
 @keyframes blob{to{transform:translate(-26px,-46px) scale(1.25)}}
 .dock-bg .px{position:absolute;color:var(--acc);line-height:1;font-family:var(--mono);animation:drift var(--dur,18s) ease-in-out infinite alternate;animation-delay:var(--del,0s)}
 @keyframes drift{from{transform:translate(0,0) rotate(0)}to{transform:translate(var(--dx,20px),var(--dy,-30px)) rotate(var(--rot,90deg))}}
-@media(prefers-reduced-motion:reduce){.dock-bg::before,.dock-bg::after,.dock-bg .px{animation:none}}
+
 
 /* ---- whole-page animated background: waving layers ---- */
 .dock-bg{display:block;top:0;right:0;bottom:0;left:0;width:auto;z-index:-1}
@@ -421,7 +421,7 @@ h1{font:500 clamp(28px,3.1vw,40px)/1.05 var(--mono);margin:0 0 10px}
 .wv3{bottom:0;--h:24vh;--o:.11;--t:22s;--b:6s;--by:10px}
 .wv4{top:0;--h:34vh;--o:.045;--t:54s;--b:12s;--by:12px;--dir:-1440px;transform:scaleY(-1)}
 .wv4{animation:wavex var(--t) linear infinite}
-@media(prefers-reduced-motion:reduce){.wave{animation:none}}
+
 
 /* ---- BalikBarangay phone mockups (carousel cards) ---- */
 .shots-label{margin:22px 0 4px}
@@ -438,7 +438,7 @@ h1{font:500 clamp(28px,3.1vw,40px)/1.05 var(--mono);margin:0 0 10px}
 .screen img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 0%}
 .cov[data-pos="0"] .screen img{animation:scrollshot 12s ease-in-out infinite alternate}
 @keyframes scrollshot{0%,12%{object-position:50% 0%}88%,100%{object-position:50% 100%}}
-@media(prefers-reduced-motion:reduce){.cov[data-pos="0"] .screen img{animation:none}}
+
 
 /* ---- BalikBarangay phones: smaller, screenshots fit the screen exactly ---- */
 #web-mobile .cov{width:min(290px,72%)}
@@ -447,3 +447,12 @@ h1{font:500 clamp(28px,3.1vw,40px)/1.05 var(--mono);margin:0 0 10px}
 .screen{border-radius:25px}
 .screen img{object-fit:cover;object-position:50% 50%}
 .cov[data-pos="0"] .screen img{animation:none}
+
+/* ---- Motion switch: visitors choose; animations are ON by default ---- */
+html.no-motion *,html.no-motion *::before,html.no-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+.theme{margin-bottom:8px}
+.motion{all:unset;cursor:pointer;display:flex;align-items:center;gap:8px;width:max-content;margin:0 0 14px;padding:4px 12px;border:1px solid var(--line);border-radius:99px;font:11px var(--mono);color:var(--mute)}
+.motion i{width:8px;height:8px;border-radius:50%;background:var(--acc)}
+.motion[aria-pressed=false] i{background:var(--line)}
+.motion:hover{border-color:var(--acc);color:var(--fg)}
+.motion:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
