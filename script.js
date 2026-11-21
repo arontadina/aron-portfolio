@@ -152,3 +152,24 @@
   apply(on);
   if(b)b.addEventListener('click',function(){on=!on;try{localStorage.setItem('motion',on?'on':'off')}catch(e){}apply(on)});
 })();
+// Opening animation (once per browser session; skipped when Motion is off)
+(function(){
+  var el=document.getElementById('intro');if(!el)return;
+  if(document.documentElement.classList.contains('no-intro')){el.parentNode.removeChild(el);return}
+  try{sessionStorage.setItem('introSeen','1')}catch(e){}
+  var svg=document.getElementById('introSvg');
+  if(window.innerWidth<700)svg.setAttribute('viewBox','270 -80 780 460');
+  // wave: rounded up/down strokes that grow taller and run off the right edge
+  var r=20,x=895,cy=150,k=0,d='M'+x+' 70 a'+r+' '+r+' 0 0 1 '+(2*r)+' 0';x+=2*r;
+  while(x<2200){var A=Math.min(215,80+k*20);d+=' V'+(cy+A)+' a'+r+' '+r+' 0 0 0 '+(2*r)+' 0 V'+(cy-A)+' a'+r+' '+r+' 0 0 1 '+(2*r)+' 0';x+=4*r;k++}
+  document.getElementById('introWave').setAttribute('d',d);
+  var t1,t2;
+  function finish(){clearTimeout(t1);clearTimeout(t2);el.classList.add('reveal','done')}
+  requestAnimationFrame(function(){requestAnimationFrame(function(){
+    el.classList.add('go');
+    t1=setTimeout(function(){el.classList.add('reveal')},3720);
+    t2=setTimeout(finish,5000);
+  })});
+  ['click','keydown','touchstart'].forEach(function(ev){el.addEventListener(ev,finish,{once:true})});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')finish()},{once:true});
+})();
